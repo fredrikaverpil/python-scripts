@@ -9,6 +9,7 @@ version=v
 Would rename the following files accordingly:
 hello.jpeg -> hi.jpeg
 image_version_001.png -> image_v_001.png
+hello_version.jpg -> hi_v.jpg
 '''
 
 import os
