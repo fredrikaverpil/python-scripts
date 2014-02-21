@@ -1,4 +1,4 @@
-def chunkCalculator(self, startframe, endframe, chunksize):
+def chunkCalculator(startframe, endframe, chunksize):
 	import math
 
 	# User input values
