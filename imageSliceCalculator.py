@@ -127,13 +127,19 @@ def spiral(m):
 
 
 
+
+#######################################################
+#
+#	Example usage
+#
+#######################################################
+
+
 slices = 32				# Amount of desired slices
 imageWidth = 1024		# Image width
 imageHeight = 576		# Image height
 grid, coordinates = sliceCalculator(slices, imageWidth, imageHeight)		# Generate grid and region coordinates
 sliceorder = list(spiral(grid))												# Generate spiraling order based on grid structure
-
-
 
 # Regular slice order
 for row in grid:
@@ -141,12 +147,10 @@ for row in grid:
 		print 'Region ' + str(cell)
 		print coordinates[cell-1]
 
-
 # Spiraling slice order
 for cell in sliceorder:
 	print 'Region ' + str(cell)
 	print coordinates[cell-1]
-
 
 
 	
