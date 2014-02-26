@@ -1,6 +1,4 @@
 def sliceCalculator(slices, x, y):
-	# Feed this function the amount of slices you would like and the resolution of the image
-	
 	import math
 
 	imageWidth = x
@@ -93,17 +91,6 @@ def sliceCalculator(slices, x, y):
 
 
 def spiral(m):
-	# Usage
-	# Example output
-	# >>> m = [[1, 2, 3, 4], 
-	# ...      [5, 6, 7, 8], 
-	# ...      [9, 10, 11, 12], 
-	# ...      [13, 14, 15, 16]]
-	# >>> list(spiral(m))
-	# [6, 7, 11, 10, 1, 2, 3, 4, 8, 12, 16, 15, 14, 13, 9, 5]
-
-
-
 	length = len(m[0])
 	last = length - 1
 	mid = length // 2
