@@ -134,12 +134,19 @@ grid, coordinates = sliceCalculator(slices, imageWidth, imageHeight)		# Generate
 sliceorder = list(spiral(grid))												# Generate spiraling order based on grid structure
 
 
-# Regular slice order
-for region in coordinates:
-	print region
 
-# Spiraling slice order
+# Regular slice order
 for row in grid:
 	for cell in row:
-		print coordinates[cell]
+		print 'Region ' + str(cell)
+		print coordinates[cell-1]
 
+
+# Spiraling slice order
+for cell in sliceorder:
+	print 'Region ' + str(cell)
+	print coordinates[cell-1]
+
+
+
+	
